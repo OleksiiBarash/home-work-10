@@ -1,0 +1,50 @@
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.menu {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu__item {
+    display: inline-block;
+    position: relative;
+}
+
+.link {
+    display: block;
+    padding: 20px 30px;
+    background-color: #292929;
+    color: white;
+}
+
+.link:hover {
+    background-color: blueviolet;
+    color: aqua;
+    font-weight: 900;
+}
+
+.menu__item > ul {
+    position: absolute;
+    display: none;
+}
+
+.menu__item, .under-menu__item, .footer-menu__item {
+    width: 150px;
+}
+
+.menu__item:hover .under-menu {
+    display: block;
+}
+
+.under-menu__item > ul {
+    display: none;
+    position: absolute;
+    left: 150px;
+}
+
+.under-menu__item:hover .footer-menu {
+    display: block;
+}

@@ -8,10 +8,11 @@
     padding-top: 10px;
 }
 
-.menu__item {
+.menu > li {
     display: inline-block;
     position: relative;
 }
+
 
 .link {
     display: block;
@@ -31,6 +32,10 @@
     display: none;
 }
 
+.under-menu li {
+    position: relative;
+}
+
 .menu__item, .under-menu__item, .footer-menu__item {
     width: 150px;
 }
@@ -42,9 +47,14 @@
 .under-menu__item > ul {
     display: none;
     position: absolute;
-    left: 150px;
 }
 
 .under-menu__item:hover .footer-menu {
     display: block;
+}
+
+.footer-menu {
+    position: absolute;
+    left: 100%;
+    top: 0%;
 }
